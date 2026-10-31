@@ -1,26 +1,37 @@
-# Awesome Small Business Endpoint Protection
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Small Business Endpoint Protection Banner" width="100%" />
+</p>
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Tracked Vendors](https://img.shields.io/badge/vendors-SaaS%20%26%20Open%20Source-blue.svg)](#saas-products)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](#how-to-contribute)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# 🛡️ Awesome Small Business Endpoint Protection
 
-> A curated directory of top-tier Small Business Endpoint Protection platforms, lightweight EDR (Endpoint Detection & Response), managed threat detection (MDR), and self-hosted open-source endpoint security tools for SMBs, IT generalists, and MSPs.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List" /></a>
+  <a href="#-saas-products"><img src="https://img.shields.io/badge/vendors-SaaS%20%26%20Open%20Source-blue.svg" alt="Tracked Vendors" /></a>
+  <a href="#-how-to-contribute"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions Welcome" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
----
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS Products](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [Buyer's Evaluation Guide](#buyers-evaluation-guide-for-smbs)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+> 🚀 A curated directory of top-tier Small Business Endpoint Protection platforms, lightweight EDR (Endpoint Detection & Response), managed threat detection (MDR), and self-hosted open-source endpoint security tools for SMBs, IT generalists, and MSPs.
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📑 Table of Contents
+
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS Products](#️-saas-products)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🧭 Buyer's Evaluation Guide for SMBs](#-buyers-evaluation-guide-for-smbs)
+- [🤝 Support](#-support)
+- [📈 Star History](#-star-history)
+- [💡 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#️-disclaimer)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
 
 The global **Endpoint Protection Platform (EPP)** and **Endpoint Detection and Response (EDR)** market is estimated at **$17 billion to $23 billion USD**, with forecasts projecting growth beyond **$40 billion USD** over the next decade. 
 
@@ -28,11 +39,11 @@ The sector exhibits a **two-tier market structure**: it is **moderately concentr
 
 ---
 
-## SaaS Products
+## ☁️ SaaS Products
 
 The table below ranks leading SaaS endpoint protection platforms tailored for small and medium-sized businesses. Companies are sorted by size (**Market Capitalization / Company Valuation** descending).
 
-| Product / Vendor | Company Size (Market Cap / Valuation) | Pricing (Specific Starting Tier) | Free Tier / Trial Limit | Key Focus & Features |
+| Product / Vendor | 🏢 Company Size (Market Cap / Valuation) | 💵 Pricing (Specific Starting Tier) | ⏳ Free Tier / Trial Limit | 🎯 Key Focus & Features |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Microsoft Defender for Business](https://www.microsoft.com/en-us/security/business/microsoft-defender-business)** | ~$3.1T Market Cap (Microsoft NASDAQ: MSFT) | **$3.00/user/month** (annual commitment, covers up to 5 devices per user) | **30-day free trial** (up to 300 users, full EDR & automated remediation) | Enterprise-grade EDR and automated investigation designed specifically for SMBs with up to 300 seats. |
 | **[CrowdStrike Falcon Go](https://www.crowdstrike.com/)** | ~$75B Market Cap (CrowdStrike NASDAQ: CRWD) | **$59.99/device/year** (or $7.99/device/month, max 100 devices) | **15-day free trial** (covers up to 100 devices with Falcon Prevent next-gen AV & USB control) | AI-powered next-gen antivirus and USB device control for lightweight SMB endpoint defense. |
@@ -47,11 +58,11 @@ The table below ranks leading SaaS endpoint protection platforms tailored for sm
 
 ---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
 Open-source endpoint protection projects are sorted below by **GitHub Star Count (descending)**. Every repository badge links directly to its live GitHub Stargazers page.
 
-| Project | GitHub Stars (Desc) | Category & Purpose | Key Capabilities | Best Suited For |
+| Project | ⭐ GitHub Stars (Desc) | 🏷️ Category & Purpose | ⚙️ Key Capabilities | 🎯 Best Suited For |
 | :--- | :--- | :--- | :--- | :--- |
 | **[osquery](https://github.com/osquery/osquery)** | [![Stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers) | SQL-Powered Endpoint Instrumentation | Exposes the operating system as a high-performance relational database. Allows querying processes, open sockets, loaded kernel modules, and file modifications with simple SQL. | Teams seeking deep, low-overhead endpoint visibility and compliance auditing across Windows, Linux, and macOS. |
 | **[Wazuh](https://github.com/wazuh/wazuh)** | [![Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers) | Full EDR, XDR & SIEM Stack | Comprehensive platform offering File Integrity Monitoring (FIM), vulnerability detection, threat hunting, configuration assessment, and MITRE ATT&CK mapping. | Organizations with dedicated IT/security capacity wanting full enterprise-grade SIEM/EDR without software license costs. |
@@ -68,23 +79,42 @@ Open-source endpoint protection projects are sorted below by **GitHub Star Count
 
 ---
 
-## Buyer's Evaluation Guide for SMBs
+## 🧭 Buyer's Evaluation Guide for SMBs
 
 When deciding between **Commercial SaaS** and **Open-Source Self-Hosted Solutions**, small business teams should evaluate three primary trade-offs:
 
-1. **Human Operations vs. Software Cost**:
+1. 🧑‍💻 **Human Operations vs. Software Cost**:
    - Commercial MDR solutions like **Huntress** or enterprise suites like **Microsoft Defender for Business** include automated remediation or 24/7 human threat-hunting teams.
    - Open-source solutions like **Wazuh** or **OpenEDR** provide robust telemetry and detection engines, but **require in-house staff or an MSP** to triage alerts, tune false positives, and remediate compromises.
-2. **Agent Footprint & OS Coverage**:
+2. ⚡ **Agent Footprint & OS Coverage**:
    - Solutions like **Webroot** and **osquery** are celebrated for minimal CPU and RAM footprints.
    - Verify whether your fleet contains mixed OS environments (Windows, macOS, Linux distributions) before finalizing your tooling stack.
-3. **Deployment Complexity**:
+3. 🛠️ **Deployment Complexity**:
    - SaaS platforms can be rolled out across 50–300 devices in under an hour via standard MDM or single-installer scripts.
    - Open-source platforms like Wazuh or CISA LME require maintaining a central server cluster (Elasticsearch/OpenSearch indexer, dashboard, and management instances).
 
 ---
 
-## How to Contribute
+## 🤝 Support
+
+If you find this curated resource helpful for securing your team, company, or home lab, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it on GitHub.
+- 🍴 **Fork and contribute** new endpoint protection tools, security updates, and pricing details.
+- 📢 **Share this repo** on Twitter/X, LinkedIn, Reddit, or security Discord communities.
+- ☕ **Buy a coffee / sponsor the project** via the official [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support keeps this guide independently maintained, up-to-date, and free forever! 🙌
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Small-Business-Endpoint-Protection&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Small-Business-Endpoint-Protection&type=date&legend=top-left)
+
+---
+
+## 💡 How to Contribute
 
 1. Fork this repository.
 2. Add or update entries in `README.md` following the existing tabular structure.
@@ -94,7 +124,7 @@ When deciding between **Commercial SaaS** and **Open-Source Self-Hosted Solution
 
 ---
 
-## Disclaimer
+## ⚠️ Disclaimer
 
 - This curated list is maintained for educational and informational purposes; inclusion does not constitute a vendor endorsement.
 - Pricing, trial periods, and market valuations fluctuate over time—always verify current terms on the official vendor websites.
