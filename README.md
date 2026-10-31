@@ -60,9 +60,9 @@ The table below ranks leading SaaS endpoint protection platforms tailored for sm
 
 ## 💻 Open-Source GitHub Projects
 
-Open-source endpoint protection projects are sorted below by **GitHub Star Count (descending)**. Every repository badge links directly to its live GitHub Stargazers page.
+Open-source endpoint protection projects are sorted below by **GitHub Stars_Count (descending)**. Every repository badge links directly to its live GitHub Stargazers page.
 
-| Project | ⭐ GitHub Stars (Desc) | 🏷️ Category & Purpose | ⚙️ Key Capabilities | 🎯 Best Suited For |
+| Project | ⭐ GitHub_Stars (Desc) | 🏷️ Category & Purpose | ⚙️ Key Capabilities | 🎯 Best Suited For |
 | :--- | :--- | :--- | :--- | :--- |
 | **[osquery](https://github.com/osquery/osquery)** | [![Stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers) | SQL-Powered Endpoint Instrumentation | Exposes the operating system as a high-performance relational database. Allows querying processes, open sockets, loaded kernel modules, and file modifications with simple SQL. | Teams seeking deep, low-overhead endpoint visibility and compliance auditing across Windows, Linux, and macOS. |
 | **[Wazuh](https://github.com/wazuh/wazuh)** | [![Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers) | Full EDR, XDR & SIEM Stack | Comprehensive platform offering File Integrity Monitoring (FIM), vulnerability detection, threat hunting, configuration assessment, and MITRE ATT&CK mapping. | Organizations with dedicated IT/security capacity wanting full enterprise-grade SIEM/EDR without software license costs. |
@@ -119,7 +119,7 @@ Your support keeps this guide independently maintained, up-to-date, and free for
 1. Fork this repository.
 2. Add or update entries in `README.md` following the existing tabular structure.
 3. Ensure pricing and trial specifications are concrete (avoid vague phrases such as *"Contact Sales"* or *"Free Trial Available"* without time limits).
-4. For open-source tools, include the official GitHub repository and appropriate star badge format.
+4. For open-source tools, include the official GitHub repository and appropriate Stars_Badge format.
 5. Submit a Pull Request with a clear description of the addition or revision.
 
 ---
