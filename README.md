@@ -1,221 +1,101 @@
-# Awesome-Small-Business-Endpoint-Protection
+# Awesome Small Business Endpoint Protection
 
-## Top Small Business Endpoint Protection Ecosystem
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Tracked Vendors](https://img.shields.io/badge/vendors-SaaS%20%26%20Open%20Source-blue.svg)](#saas-products)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](#how-to-contribute)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Lightweight EDR, Managed Detection & Self-Hosted Endpoint Security*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Small Business Endpoint Protection**. These tools enable organizations without dedicated security teams to detect and respond to threats on laptops, desktops, and servers—providing enterprise-grade protection without the complexity or cost of full-scale security operations centers.
-
-
-
-**Examples** include CrowdStrike Falcon Go, Microsoft Defender for Business, SentinelOne Core, Sophos Intercept X, Bitdefender GravityZone, Trend Micro Worry-Free, Huntress, Malwarebytes for Business, Webroot Business Endpoint Protection, and Avast Business (the category leaders).
-
-
-
-**Open-source emphasis**: Small Business Endpoint Protection is a domain where open-source tooling is **viable but requires honest acknowledgment of the operational gap**. **CISA's Logging Made Easy (LME)** is the standout for resource-constrained organizations—a no-cost log management and threat detection stack integrating Elastic and Wazuh, explicitly designed for small- to medium-sized organizations with limited security resources . **Wazuh** provides the most complete open-source EDR/XDR and SIEM platform, with file integrity monitoring, vulnerability detection, and MITRE ATT&CK mapping . **OpenEDR** offers a free-forever EDR platform with MITRE ATT&CK visibility and automated threat containment . However, the critical caveat: **no open-source project provides the managed 24/7 threat hunting and human expertise** that Huntress or CrowdStrike Falcon Go deliver—open-source gives you the tools, but you must supply the analyst time and operational maturity .
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[CrowdStrike Falcon Go](https://www.crowdstrike.com/)**  
-
-  Simplified, affordable EDR package from CrowdStrike designed for small businesses; provides next-gen antivirus, real-time threat detection, and managed threat hunting without requiring a dedicated security team.
-
-
-
-- **[Microsoft Defender for Business](https://www.microsoft.com/en-us/security/business/microsoft-defender-business)**  
-
-  Enterprise-grade endpoint protection built for small and medium businesses (up to 300 users); includes attack surface reduction, next-gen antivirus, endpoint detection and response, and automated investigation.
-
-
-
-- **[SentinelOne Core](https://www.sentinelone.com/)**  
-
-  Autonomous AI-powered endpoint protection for small businesses; provides real-time prevention, detection, and response with minimal configuration.
-
-
-
-- **[Sophos Intercept X](https://www.sophos.com/)**  
-
-  Endpoint protection with deep learning malware detection, anti-ransomware, and exploit prevention; available in small business editions with simplified management.
-
-
-
-- **[Bitdefender GravityZone](https://www.bitdefender.com/)**  
-
-  Business endpoint security platform with layered protection, including machine learning, behavioral analysis, and anti-exploit technologies.
-
-
-
-- **[Trend Micro Worry-Free](https://www.trendmicro.com/)**  
-
-  Security suite designed specifically for small businesses; includes endpoint protection, email security, and web threat protection with cloud-based management.
-
-
-
-- **[Huntress](https://www.huntress.com/)**  
-
-  Managed detection and response (MDR) platform built for small businesses and MSPs; combines endpoint detection with a **human threat hunting team** that investigates and responds to incidents on your behalf.
-
-
-
-- **[Malwarebytes for Business](https://www.malwarebytes.com/)**  
-
-  Endpoint protection with anti-malware, anti-exploit, and ransomware mitigation; positioned for small teams wanting lightweight protection.
-
-
-
-- **[Webroot Business Endpoint Protection](https://www.webroot.com/)**  
-
-  Cloud-based endpoint security with real-time anti-malware and predictive threat intelligence; known for lightweight agent footprint.
-
-
-
-- **[Avast Business](https://www.avast.com/business)**  
-
-  Endpoint protection suite for small businesses; includes antivirus, firewall, and email security with cloud management console.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Complete Endpoint Security Stacks
-
-
-
-- **[Wazuh](https://github.com/wazuh/wazuh)**  
-
-  The most comprehensive open-source **EDR/XDR and SIEM platform** available (Apache-2.0)  . Features: **file integrity monitoring (FIM)**, **vulnerability detection** correlated with CTI data, **malware detection**, configuration assessment (SCA), log data analysis, and **MITRE ATT&CK mapping** for threat hunting . The Wazuh agent runs on Windows, Linux, macOS, and legacy Unix systems . **Deployment**: requires a Wazuh server (indexer + dashboard + manager), which means significant infrastructure and operational expertise—**not a plug-and-play small business solution** . **Best for organizations with some IT/security capacity** wanting enterprise-grade detection without licensing costs.
-
-
-
-- **[CISA Logging Made Easy (LME)](https://github.com/cisagov/lme)**  
-
-  The **standout option for resource-constrained small businesses**—a no-cost log management and threat detection stack from CISA, explicitly designed for organizations that "would otherwise have little to no functionality to detect attacks"  . **Powered by** Elastic Stack (log management, search, visualization), **Wazuh** (endpoint detection and response), and Podman (containerization)  . **LME 2.0 supports Windows, Linux, and macOS** endpoints via Elastic and Wazuh agents  . Deployable on-premises or in the cloud; includes customizable dashboards and follows Secure by Design principles  . **Best for small businesses with limited IT resources** wanting a vetted, government-backed stack that combines endpoint detection with centralized logging—but it still requires deployment and ongoing operational attention.
-
-
-
-### Endpoint Detection & Response (EDR)
-
-
-
-- **[OpenEDR](https://github.com/ComodoSecurity/openedr)**  
-
-  Free, open-source **EDR platform** from Xcitium/Comodo (open-source initiative)  . Features: **real-time threat detection** with MITRE ATT&CK visibility, comprehensive logging and analytics, **automated threat containment** (isolates affected endpoint from network upon detection), file-system mini-filter, low-level registry and process monitoring, and self-protection  . **Multi-platform support**: Windows, macOS, and Linux  . **"Free Forever: No licensing fees, no hidden costs"**  . **Best for small businesses wanting an EDR foundation** without commercial licensing—but it is an agent/telemetry platform, not a managed detection service; you must monitor and respond to alerts yourself.
-
-
-
-### Host-Based Intrusion Detection (HIDS)
-
-
-
-- **[OSSEC](https://www.ossec.net/)**  
-
-  The long-standing open-source **Host-based Intrusion Detection System (HIDS)** (GPLv2)  . Features: **log analysis**, **file integrity checking**, **Windows registry monitoring**, centralized policy enforcement, **rootkit detection**, real-time alerting, and **active response**  . Runs on Linux, OpenBSD, FreeBSD, macOS, Solaris, and Windows  . **Widely used** by ISPs, universities, governments, and large corporate data centers as their main HIDS  . **Note**: OSSEC is the foundation from which Wazuh evolved; it is more mature but less actively developed than Wazuh. **Best for organizations wanting proven, lightweight HIDS** without the full Wazuh stack—but the interface and management are dated.
-
-
-
-### Specialized & Emerging Tools
-
-
-
-- **[Radegast EDR](https://github.com/radegast-edr/radegast-backend)**  
-
-  Lightweight, **privacy-focused EDR platform** for smaller teams and home labs (FastAPI/SQLite, Docker/Podman)  . Features: **end-to-end encryption (E2EE) using age encryption**—logs are encrypted on the device before transmission, and the server cannot read them ; device management with enrollment tokens; configuration packs; team collaboration; and a built-in Rustinel eBPF sensor for Linux and Windows  . **Best for privacy-conscious small teams** wanting EDR telemetry without trusting the server with raw logs—but it is an early-stage project (v0.4.0) and less proven than Wazuh or OpenEDR.
-
-
-
-- **[Velociraptor](https://github.com/Velocidex/velociraptor)**  
-
-  Advanced open-source **digital forensics and incident response (DFIR)** tool maintained by Rapid7  . Features: endpoint visibility, VQL query language, **VFS (Virtual File System)** for interactive endpoint inspection, offline collection with asymmetric encryption (X509/PGP), and scalable client-server architecture  . **Not a traditional antivirus or real-time EDR**—it is a forensic/hunting tool for incident investigation. **Best for small businesses with a security-savvy admin** who needs DFIR capabilities after an incident, not for day-to-day prevention.
-
-
-
-- **[ClamAV](https://github.com/Cisco-Talos/clamav)**  
-
-  Open-source **antivirus toolkit** (GPLv2) designed primarily for **email gateway scanning**  . Features: multi-threaded daemon, command-line scanner, automatic database updates, detection of millions of viruses/trojans/malware, archive scanning with bomb protection, and **on-access scanning on Linux** (ClamOnAcc)  . **Critical caveat**: "**ClamAV is not a traditional anti-virus or endpoint security suite**"  . It is a file scanner, not a behavioral EDR—**not a replacement for CrowdStrike Falcon Go or Microsoft Defender for Business**. Best used as a supplementary mail gateway scanner.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **opensecagent** — Lightweight security agent with host/Docker inventory, drift detection, configurable action tiers (alert to soft containment), optional LLM-assisted incident summaries, and audit logging (PyPI, v0.2.8)  . **Early-stage**—verify production maturity before relying on it for protection.
-
-- **No open-source equivalent to Huntress MDR exists** — Huntress's value is its **human threat hunting team** that investigates alerts 24/7. Open-source tools (Wazuh, OpenEDR, LME) provide detection, but **the analyst time and expertise must come from your own team or an MSP** . This is the critical gap for small businesses without dedicated security staff.
-
-
-
-**Frameworks for building custom systems**: For **small businesses with limited IT resources wanting a vetted stack**, CISA's LME provides a government-backed combination of Elastic and Wazuh explicitly designed for this audience . For **organizations with some security capacity wanting full EDR/XDR**, Wazuh provides the most complete open-source platform . For **free EDR with automated containment**, OpenEDR . For **privacy-focused small teams**, Radegast . No open-source project replaces the **managed human threat hunting** of Huntress—organizations without security staff should evaluate MDR services or MSP partnerships alongside open-source tooling.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Endpoint protection platforms handling security telemetry must comply with organizational security policies; **self-hosted solutions place full responsibility for deployment, tuning, alert triage, and incident response on the operator** .
-
-- **Open-source endpoint protection is viable for detection but not for managed response**—LME, Wazuh, and OpenEDR provide real detection capabilities , but **none replace the 24/7 human threat hunting** that Huntress or CrowdStrike Falcon Go provide. Small businesses without dedicated security staff should consider MDR services or MSP partnerships rather than self-hosting EDR alone.
-
-- Verify license terms for commercial use; Wazuh uses Apache-2.0 , OpenEDR is "free forever" , OSSEC uses GPLv2 , and ClamAV uses GPLv2 .
-
-
+> A curated directory of top-tier Small Business Endpoint Protection platforms, lightweight EDR (Endpoint Detection & Response), managed threat detection (MDR), and self-hosted open-source endpoint security tools for SMBs, IT generalists, and MSPs.
 
 ---
 
+## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS Products](#saas-products)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [Buyer's Evaluation Guide](#buyers-evaluation-guide-for-smbs)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
 
-**Made for small business owners, IT generalists, and MSPs choosing endpoint protection.**  
+---
 
-Let's make endpoint protection more open, but with clear eyes about the human expertise and operational responsibility that open-source cannot replace.
+## Sector Overview & Market Dynamics
+
+The global **Endpoint Protection Platform (EPP)** and **Endpoint Detection and Response (EDR)** market is estimated at **$17 billion to $23 billion USD**, with forecasts projecting growth beyond **$40 billion USD** over the next decade. 
+
+The sector exhibits a **two-tier market structure**: it is **moderately concentrated at the enterprise top tier**—where a handful of multi-billion-dollar platform giants (such as Microsoft and CrowdStrike) command substantial consolidated market share—yet remains **highly fragmented across the SMB, mid-market, and MSP channel landscapes**, where dozens of specialized vendors, managed detection services (MDR), and regional providers compete on price, agent footprint, and managed operations.
+
+---
+
+## SaaS Products
+
+The table below ranks leading SaaS endpoint protection platforms tailored for small and medium-sized businesses. Companies are sorted by size (**Market Capitalization / Company Valuation** descending).
+
+| Product / Vendor | Company Size (Market Cap / Valuation) | Pricing (Specific Starting Tier) | Free Tier / Trial Limit | Key Focus & Features |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Defender for Business](https://www.microsoft.com/en-us/security/business/microsoft-defender-business)** | ~$3.1T Market Cap (Microsoft NASDAQ: MSFT) | **$3.00/user/month** (annual commitment, covers up to 5 devices per user) | **30-day free trial** (up to 300 users, full EDR & automated remediation) | Enterprise-grade EDR and automated investigation designed specifically for SMBs with up to 300 seats. |
+| **[CrowdStrike Falcon Go](https://www.crowdstrike.com/)** | ~$75B Market Cap (CrowdStrike NASDAQ: CRWD) | **$59.99/device/year** (or $7.99/device/month, max 100 devices) | **15-day free trial** (covers up to 100 devices with Falcon Prevent next-gen AV & USB control) | AI-powered next-gen antivirus and USB device control for lightweight SMB endpoint defense. |
+| **[Avast Business](https://www.avast.com/business)** | ~$16B Market Cap (Gen Digital NASDAQ: GEN) | **$36.99/device/year** (Essential Business Security, 1–4 devices tier) | **30-day free trial** (full access across all business endpoints, no credit card required) | Essential next-gen antivirus, ransomware shield, data protection, and cloud management console. |
+| **[Webroot Business Endpoint Protection](https://www.webroot.com/)** | ~$6.5B Market Cap (OpenText NASDAQ: OTEX) | **$150.00/year for 5 endpoints** (~$30.00/endpoint/year starting package) | **30-day free trial** (unlimited trial endpoints, includes full console access & multi-vector protection) | Ultra-lightweight cloud agent with predictive BrightCloud threat intelligence and automated rollback. |
+| **[Trend Micro Worry-Free Services](https://www.trendmicro.com/)** | ~$5.5B Market Cap (Trend Micro TYO: 4704) | **$37.75/user/year** (Worry-Free Services Standard starting tier) | **30-day free trial** (valid for up to 25 devices/endpoints, full security suite access) | Cloud-managed endpoint and web threat security designed for lean IT teams and SMB environments. |
+| **[SentinelOne Singularity Core](https://www.sentinelone.com/)** | ~$5.2B Market Cap (SentinelOne NYSE: S) | **$69.99/endpoint/year** (Singularity Core entry tier through authorized resellers) | **30-day Proof of Concept (PoC) trial** (available on request via sales/certified partners) | Autonomous AI behavioral engine offering real-time prevention, detection, and single-click remediation. |
+| **[Sophos Intercept X](https://www.sophos.com/)** | ~$3.9B Valuation (Acquired by Thoma Bravo) | **$28.00/user/year** (Intercept X Advanced starting volume tier) | **30-day free trial** (full functionality across Windows and macOS endpoints via Sophos Central) | Deep learning neural network malware analysis, CryptoGuard anti-ransomware, and exploit prevention. |
+| **[Huntress Managed EDR](https://www.huntress.com/)** | ~$1.55B Valuation (Series D Private Unicorn) | **$8.99/endpoint/month** (~$107.88/endpoint/year for small business tiers) | **21-day free trial** (unlimited endpoints, includes active 24/7 human SOC investigation and triage) | Turnkey Managed Detection and Response (MDR) backed by a 24/7 human threat-hunting SOC team. |
+| **[Bitdefender GravityZone](https://www.bitdefender.com/)** | ~$600M+ Valuation (Vitruvian Partners Private Backed) | **$77.99/year for 3 devices** (~$26.00/device/year starting package) | **30-day free trial** (covers up to 100 endpoints, or 45-day trial for MSP partners) | Multi-layered machine learning protection, process inspector, behavioral monitoring, and anti-exploit. |
+| **[Malwarebytes for Business](https://www.malwarebytes.com/)** | ~$650M Valuation (Vector Capital Private Backed) | **$69.99/device/year** (Malwarebytes for Teams starting tier) | **14-day free trial** (covers up to 20 endpoints, complete incident isolation and remediation) | Signature-less anomaly detection, behavioral ransomware mitigation, and fast automated cleanup. |
+
+---
+
+## Open-Source GitHub Projects
+
+Open-source endpoint protection projects are sorted below by **GitHub Star Count (descending)**. Every repository badge links directly to its live GitHub Stargazers page.
+
+| Project | GitHub Stars (Desc) | Category & Purpose | Key Capabilities | Best Suited For |
+| :--- | :--- | :--- | :--- | :--- |
+| **[osquery](https://github.com/osquery/osquery)** | [![Stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers) | SQL-Powered Endpoint Instrumentation | Exposes the operating system as a high-performance relational database. Allows querying processes, open sockets, loaded kernel modules, and file modifications with simple SQL. | Teams seeking deep, low-overhead endpoint visibility and compliance auditing across Windows, Linux, and macOS. |
+| **[Wazuh](https://github.com/wazuh/wazuh)** | [![Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers) | Full EDR, XDR & SIEM Stack | Comprehensive platform offering File Integrity Monitoring (FIM), vulnerability detection, threat hunting, configuration assessment, and MITRE ATT&CK mapping. | Organizations with dedicated IT/security capacity wanting full enterprise-grade SIEM/EDR without software license costs. |
+| **[ClamAV](https://github.com/Cisco-Talos/clamav)** | [![Stars](https://img.shields.io/github/stars/Cisco-Talos/clamav?style=social&color=white)](https://github.com/Cisco-Talos/clamav/stargazers) | Antivirus Engine & Gateway Scanner | Multi-threaded scanner daemon, command-line utilities, automated signature database updater, and on-access scanning on Linux (ClamOnAcc). | Server-side and mail-gateway file scanning. Note: not a behavioral EDR replacement. |
+| **[Fleet](https://github.com/fleetdm/fleet)** | [![Stars](https://img.shields.io/github/stars/fleetdm/fleet?style=social&color=white)](https://github.com/fleetdm/fleet/stargazers) | Centralized Osquery & MDM Manager | Open-source device management server built on top of osquery. Provides real-time fleet queries, policy enforcement, vulnerability tracking, and remote script execution. | Small engineering-heavy teams needing centralized device visibility, vulnerability posture, and osquery management. |
+| **[OSSEC](https://github.com/ossec/ossec-hids)** | [![Stars](https://img.shields.io/github/stars/ossec/ossec-hids?style=social&color=white)](https://github.com/ossec/ossec-hids/stargazers) | Host-Based Intrusion Detection (HIDS) | Proven log analysis, registry auditing, rootkit detection, file integrity checking, and automated active response scripts. | Lightweight host intrusion detection on production Linux and Unix servers. |
+| **[Velociraptor](https://github.com/Velocidex/velociraptor)** | [![Stars](https://img.shields.io/github/stars/Velocidex/velociraptor?style=social&color=white)](https://github.com/Velocidex/velociraptor/stargazers) | Digital Forensics & Incident Response (DFIR) | Advanced endpoint forensics powered by VQL (Velociraptor Query Language), virtual file system (VFS) inspection, and offline evidence acquisition. | Rapid incident response, post-breach investigation, and ad-hoc endpoint threat hunting. |
+| **[OpenEDR](https://github.com/ComodoSecurity/openedr)** | [![Stars](https://img.shields.io/github/stars/ComodoSecurity/openedr?style=social&color=white)](https://github.com/ComodoSecurity/openedr/stargazers) | Open EDR & Telemetry Agent | Low-level kernel sensor, file system mini-filter, process and registry telemetry, and automated network containment upon detection. | Teams wanting a zero-licensing-cost EDR foundation with kernel-level tracking and threat containment. |
+| **[CISA Logging Made Easy (LME)](https://github.com/cisagov/lme)** | [![Stars](https://img.shields.io/github/stars/cisagov/lme?style=social&color=white)](https://github.com/cisagov/lme/stargazers) | SMB Turnkey Logging & Detection Stack | Government-vetted architecture combining Elastic Stack and Wazuh containerized with Podman for centralized telemetry and basic alerting. | Resource-constrained organizations needing a structured, free detection baseline without designing architecture from scratch. |
+| **[BLUESPAWN](https://github.com/ION28/BLUESPAWN)** | [![Stars](https://img.shields.io/github/stars/ION28/BLUESPAWN?style=social&color=white)](https://github.com/ION28/BLUESPAWN/stargazers) | Active Defense & EDR Sensor | Windows active defense client that detects suspicious behavior, validates endpoint security posture, and mitigates threats using MITRE ATT&CK mappings. | Windows system administrators and blue teams wanting local endpoint defense verification and suspicious activity blocking. |
+| **[WHIDS](https://github.com/0xrawsec/whids)** | [![Stars](https://img.shields.io/github/stars/0xrawsec/whids?style=social&color=white)](https://github.com/0xrawsec/whids/stargazers) | Windows Host IDS & EDR | Open-source HIDS/EDR for Windows based on Sysmon telemetry. Evaluates events against customizable detection rules in YAML. | Lightweight Windows host monitoring based on native Sysmon event pipelines. |
+| **[Rustinel](https://github.com/Karib0u/rustinel)** | [![Stars](https://img.shields.io/github/stars/Karib0u/rustinel?style=social&color=white)](https://github.com/Karib0u/rustinel/stargazers) | Lightweight Native Telemetry Sensor | Cross-platform endpoint detection written in Rust. Evaluates native telemetry directly with Sigma, YARA, and IOC rules without requiring cloud infrastructure. | High-performance, low-footprint endpoint monitoring on resource-limited hosts. |
+| **[Radegast EDR](https://github.com/radegast-edr/radegast-console-backend)** | [![Stars](https://img.shields.io/github/stars/radegast-edr/radegast-console-backend?style=social&color=white)](https://github.com/radegast-edr/radegast-console-backend/stargazers) | Privacy-First Encrypted EDR | Privacy-focused EDR backend utilizing age encryption (E2EE) so endpoint telemetry cannot be decrypted by unauthorized servers. | Privacy-sensitive small labs and teams wanting self-hosted telemetry without raw cloud logs. |
+
+---
+
+## Buyer's Evaluation Guide for SMBs
+
+When deciding between **Commercial SaaS** and **Open-Source Self-Hosted Solutions**, small business teams should evaluate three primary trade-offs:
+
+1. **Human Operations vs. Software Cost**:
+   - Commercial MDR solutions like **Huntress** or enterprise suites like **Microsoft Defender for Business** include automated remediation or 24/7 human threat-hunting teams.
+   - Open-source solutions like **Wazuh** or **OpenEDR** provide robust telemetry and detection engines, but **require in-house staff or an MSP** to triage alerts, tune false positives, and remediate compromises.
+2. **Agent Footprint & OS Coverage**:
+   - Solutions like **Webroot** and **osquery** are celebrated for minimal CPU and RAM footprints.
+   - Verify whether your fleet contains mixed OS environments (Windows, macOS, Linux distributions) before finalizing your tooling stack.
+3. **Deployment Complexity**:
+   - SaaS platforms can be rolled out across 50–300 devices in under an hour via standard MDM or single-installer scripts.
+   - Open-source platforms like Wazuh or CISA LME require maintaining a central server cluster (Elasticsearch/OpenSearch indexer, dashboard, and management instances).
+
+---
+
+## How to Contribute
+
+1. Fork this repository.
+2. Add or update entries in `README.md` following the existing tabular structure.
+3. Ensure pricing and trial specifications are concrete (avoid vague phrases such as *"Contact Sales"* or *"Free Trial Available"* without time limits).
+4. For open-source tools, include the official GitHub repository and appropriate star badge format.
+5. Submit a Pull Request with a clear description of the addition or revision.
+
+---
+
+## Disclaimer
+
+- This curated list is maintained for educational and informational purposes; inclusion does not constitute a vendor endorsement.
+- Pricing, trial periods, and market valuations fluctuate over time—always verify current terms on the official vendor websites.
+- Self-hosted open-source security tools place 100% of the operational and incident remediation responsibility on the operator.
